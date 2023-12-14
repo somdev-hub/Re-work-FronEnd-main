@@ -1,0 +1,31 @@
+.rainbow {
+    background: linear-gradient(
+        90deg,
+        #fbbc05 0%,
+        #bbfb05 19.07%,
+        #05ec6f 38.9%,
+        #2ee4b8 49.09%,
+        #72bbff 62.69%,
+        #f9baff 81.94%,
+        #ff4e4e 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.showdow-2xl {
+    box-shadow: 0px 0px 8px 0px rgba(92, 39, 192, 0.4);
+}
+
+.custom-swiper {
+    position: relative;
+    height: 400px;
+}
+
+.custom-swiper .swiper-pagination {
+    position: absolute !important;
+    bottom: -1px !important; /* Adjust this value as needed */
+    left: 0;
+    right: 0;
+}

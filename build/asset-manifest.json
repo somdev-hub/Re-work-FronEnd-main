@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c81b3349.css",
+    "main.js": "/static/js/main.eb374dbb.js",
+    "static/js/787.90bdd58a.chunk.js": "/static/js/787.90bdd58a.chunk.js",
+    "static/media/aboutuspage.png": "/static/media/aboutuspage.67e2351c18bdd51ca0d6.png",
+    "static/media/CareerPageImg2.png": "/static/media/CareerPageImg2.ed31a88f4bbe6f673b67.png",
+    "static/media/CareerPageImmg.png": "/static/media/CareerPageImmg.de42baad7afa5e0cbfd2.png",
+    "static/media/CareerPageImg3.png": "/static/media/CareerPageImg3.ec78a0818b093a73edce.png",
+    "static/media/recruiter-banner.svg": "/static/media/recruiter-banner.c470c51547c33d25b7e15d2f1ed9476c.svg",
+    "static/media/Frame.svg": "/static/media/Frame.2816c809fd22e1bd77bbe12e3cff4e7a.svg",
+    "static/media/ForgotPass.png": "/static/media/ForgotPass.1acf9869a327880791de.png",
+    "static/media/hero-illustration.svg": "/static/media/hero-illustration.a21e107d503c013256c47ea60d66767e.svg",
+    "static/media/signUp.svg": "/static/media/signUp.0da9e16d5e78b68de13a79727d46baa9.svg",
+    "static/media/company-banner.svg": "/static/media/company-banner.f83b764fc22021342f5affe4d1eee9ce.svg",
+    "static/media/contact.svg": "/static/media/contact.74725f81f4558113c7e38024f013a31e.svg",
+    "static/media/404img.png": "/static/media/404img.efbb8559a9be40bf70a1.png",
+    "static/media/adminLogin.png": "/static/media/adminLogin.23deb3f179ab47a978e4.png",
+    "static/media/footer_logo.png": "/static/media/footer_logo.c307f15398dca13bacea.png",
+    "static/media/needHelpImg.png": "/static/media/needHelpImg.3ab43f8deed8afbb7b0a.png",
+    "static/media/investInRework.png": "/static/media/investInRework.eff83418723af593e328.png",
+    "static/media/flowerPotImg.png": "/static/media/flowerPotImg.3a5df6e4ffe62b4fe04d.png",
+    "static/media/arrowTopRight.png": "/static/media/arrowTopRight.9b6f9c05f6b1d3ee40fd.png",
+    "static/media/nav-logo.svg": "/static/media/nav-logo.cd5d17332c191bd6d8ca4d5fad8bc6a1.svg",
+    "static/media/savings.svg": "/static/media/savings.1f89d21603f43f70ade2c8a1b2d9c4c5.svg",
+    "index.html": "/index.html",
+    "static/media/Vector.svg": "/static/media/Vector.d2648773ccb7cd94b874a88a1b29927b.svg",
+    "static/media/diamond.svg": "/static/media/diamond.91b8da91a8ed9712e88515cab8e4e8a3.svg",
+    "static/media/fast.svg": "/static/media/fast.b502bbba754577981425d7a1ee7f5427.svg",
+    "main.c81b3349.css.map": "/static/css/main.c81b3349.css.map",
+    "main.eb374dbb.js.map": "/static/js/main.eb374dbb.js.map",
+    "787.90bdd58a.chunk.js.map": "/static/js/787.90bdd58a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c81b3349.css",
+    "static/js/main.eb374dbb.js"
+  ]
+}

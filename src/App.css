@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Actor&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+:root {
+  --orange: #e77c40;
+  --hover-orange: #f3803d;
+  --blue: #0052ff;
+  --dark-blue: #0029ff;
+  --light-blue: #2091f9;
+  --lightest-blue: #acd6fd;
+  --text-grey: #676767;
+  --gray: rgba(36, 45, 73, 0.65);
+  --cardShadow: 0px 4px 17px 2px rgba(93, 99, 201, 0.25);
+  --cardColor: rgba(255, 255, 255, 0.64);
+}

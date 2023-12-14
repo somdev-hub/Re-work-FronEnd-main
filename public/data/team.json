@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Ranveer Singh",
+    "designation": "Founder & CEO",
+    "image": "data/profile-icon.svg"
+  },
+  {
+    "name": "Ranveer Singh",
+    "designation": "Founder & CEO",
+    "image": "/data/profile-icon.svg"
+  },
+  {
+    "name": "Ranveer Singh",
+    "designation": "Founder & CEO",
+    "image": "/data/profile-icon.svg"
+  },
+  {
+    "name": "Ranveer Singh",
+    "designation": "Founder & CEO",
+    "image": "/data/profile-icon.svg"
+  },
+  {
+    "name": "Ranveer Singh",
+    "designation": "Founder & CEO",
+    "image": "/data/profile-icon.svg"
+  },
+  {
+    "name": "Ranveer Singh",
+    "designation": "Founder & CEO",
+    "image": "/data/profile-icon.svg"
+  },
+  {
+    "name": "Ranveer Singh",
+    "designation": "Founder & CEO",
+    "image": "/data/profile-icon.svg"
+  }
+]

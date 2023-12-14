@@ -1,0 +1,19 @@
+Name: Somdev Behera
+Designation: React developer
+
+Project title: Rework.ai
+
+Task assigned: Navbar improvement and employee page development
+
+08-11-2023
+
+Documentation
+
+1. Navbar has been improved with the addition of aos for animation and navBg state has been added for navbar display in mobile devices. 
+2. Tracking screen size using useEffect and navbar change is replaced with css use and navBg state.
+3. Employee page has been developed and employee page is responsive for smaller screens as well.
+4. Employee page is not overwritten with the existing employee page and is developed in a new folder inside pages folder.
+5. All the components are separately developed and stored inside the EmployeePage folder.
+6. Praises for rework section has been imported from the existing praises component and is used in the employee page.
+7. A seperate css file is created for employee page and is imported into the employee page.
+8. Styling for the main heading `Artificial Intelligence` is done using the rainbow css in the EmployerPage.css file.

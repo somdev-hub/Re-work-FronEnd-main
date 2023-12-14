@@ -1,0 +1,12 @@
+.heading {
+    background: linear-gradient(205deg, #5c27c0 -2.96%, #300580 -2.95%, #734db9 45.39%, #c4a5ff 104.01%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.heading-btn {
+    border-radius: 1.25rem;
+    background: linear-gradient(95deg, #a77afc -12.03%, #5c27c0 61.09%, #5800ff 119.17%);
+    box-shadow: 0px 8px 18px 0px rgba(174, 93, 255, 0.46);
+}

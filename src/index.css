@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "GilroyLight";
+  src: url(./assets/Gilroy-Light.otf);
+}
+@font-face {
+  font-family: "GilroyExtraBold";
+  src: url(./assets/Gilroy-ExtraBold.otf);
+}
+@font-face {
+  font-family: "GilroyBold";
+  src: url(./assets/Gilroy-Bold.ttf);
+}
+@font-face {
+  font-family: "GilroySemiBold";
+  src: url(./assets/Gilroy-SemiBold.ttf);
+}
+@font-face {
+  font-family: "GilroyThin";
+  src: url(./assets/Gilroy-Thin.ttf);
+}
+@font-face {
+  font-family: "GilroyRegular";
+  src: url(./assets/Gilroy-Regular.ttf);
+}
+@font-face {
+  font-family: "GilroyBlack";
+  src: url(./assets/Gilroy-Black.ttf);
+}
+@font-face {
+  font-family: "GilroyUltraLight";
+  src: url(./assets/Gilroy-UltraLight.ttf);
+}
+@font-face {
+  font-family: "GilroyHeavy";
+  src: url(./assets/Gilroy-Heavy.ttf);
+}
+@font-face {
+  font-family: "GilroyMedium";
+  src: url(./assets/Gilroy-Medium.ttf);
+}
+
+.text-color {
+  color: var(--text-medium, #505050);
+}
+
+.head-color {
+  color: #5c27c0;
+}
+
+.buttons-styles {
+  border: 2.933px solid #5c27c0;
+  border-radius: 45.833px;
+}
+
+.buttons-styles:hover {
+  background-color: #5c27c0;
+}
+
+/* added customize css for swiper pagination bullets*/
+
+.swiper-pagination-bullet {
+  width: 16px !important;
+  height: 6px !important;
+  background: #d9d9d9;
+  border-radius: 4px !important;
+}
+
+.swiper-pagination-bullet-active {
+  width: 32px !important;
+  height: 6px !important;
+  transition: width 0.5s;
+  border-radius: 4px !important;
+  background: #5c27c0;
+  border: 1px solid transparent;
+}
+.swiper-pagination {
+  bottom: -5px !important;
+}
+
+/* remove number field arrow  */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
