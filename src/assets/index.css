@@ -44,19 +44,11 @@
 }
 @font-face {
   font-family: "GarnettSemibold";
-  src: url(./assets/Garnett-Semibold.ttf);
+  src: url(./assets/Gilroy-Medium.ttf);
 }
 @font-face {
-  font-family: "GarnettMedium";
-  src: url(./assets/Garnett-Medium.ttf);
-}
-@font-face {
-  font-family: "GarnettRegular";
-  src: url(./assets/Garnett-Regular.ttf);
-}
-@font-face {
-  font-family: "GarnettMBold";
-  src: url(./assets/Garnett-Bold.ttf);
+  font-family: "GilroyMedium";
+  src: url(./assets/Gilroy-Medium.ttf);
 }
 
 .text-color {

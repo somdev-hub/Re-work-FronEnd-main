@@ -7,18 +7,99 @@ import Register from "../../pages/register/Register";
 import Login from "../../pages/login/Login";
 import AOS from "aos";
 import "aos/dist/aos.css";
-const Navbar = () => {
-  const [smllNav, setSmllNav] = useState(false);
-  const [navBg, setNavBg] = useState(false);
 
+const NavItem = ({ to, children, external = false, setNavBg }) => {
+  const LinkComponent = external ? "a" : Link;
+  const currentPath =
+    window.location.pathname === to
+      ? "text-[#5C27C0] font-semibold"
+      : "text-[#8E8E8E]";
+  return (
+    <li
+      onClick={() => setNavBg(false)}
+      className="group relative w-full md:w-auto md:border-none border-[#fffefe] py-4 md:py-0 sm:pb-4 md:pb-0"
+    >
+      <LinkComponent
+        to={to}
+        href={to}
+        className={`border-transparent pb-1 relative ${currentPath}`}
+      >
+        {children}
+      </LinkComponent>
+      <div
+        className={`absolute left-[25%] rounded-full bottom-[-8px] h-1  group-hover:bg-[#5C27C0] duration-300 ${
+          currentPath === "text-[#5C27C0] font-semibold"
+            ? "w-1/2 bg-[#5C27C0]"
+            : "w-0 group-hover:w-1/2"
+        }`}
+      ></div>
+    </li>
+  );
+};
+
+const ButtonLink = ({
+  onClick,
+  to,
+  setOpenModal,
+  children,
+  primary = false,
+  setNavBg
+}) => (
+  <button
+    onClick={() => {
+      setNavBg(false);
+      onClick();
+    }}
+    className="md:w-fit md:border-none pb-4 py-4 md:py-0 md:pb-0"
+  >
+    <Link
+      onClick={() => setOpenModal(true)}
+      to={to}
+      className={`md:border-2 border-[#5C27C0] rounded-[10px] text-sm md:text-base md:px-4 md:py-2 xl:px-5 xl:py-3  duration-300 font-semibold ${
+        primary
+          ? "md:bg-[#5C27C0] md:text-white hover:text-[#5C27C0] hover:bg-white hover:border-[#5C27C0]"
+          : "text-[#5C27C0] md:hover:bg-[#5C27C0] md:hover:text-white"
+      }`}
+    >
+      {children}
+    </Link>
+  </button>
+);
+
+const Navbar = () => {
+  const [smallNav, setSmallNav] = useState(false);
+  const [navBg, setNavBg] = useState(false);
   const [checked, setChecked] = useState(false);
   const [openRegisterModal, setOpenRegisterModal] = useState(false);
   const [openLoginModal, setOpenLoginModal] = useState(false);
+  const navItems = [
+    {
+      to: "https://talentfinder.rework.club/",
+      external: true,
+      label: "Talent Finder"
+    },
+    { to: "/newhero", label: "For Recruiters" },
+    { to: "/employers", label: "For Employers" },
+    { to: "/aboutus", label: "About Us" },
+    { to: "/company", label: "Company" }
+  ];
+
+  const buttonLinks = [
+    {
+      onClick: () => setOpenLoginModal(true),
+      to: "/",
+      primary: true,
+      label: "Sign in"
+    },
+    { onClick: () => setOpenRegisterModal(true), to: "/", label: "Get Started" }
+  ];
+
+
   useEffect(() => {
     if (window.innerWidth > 769) {
-      setSmllNav(true);
+      setSmallNav(true);
     } else {
-      setSmllNav(false);
+      setSmallNav(false);
     }
   }, []);
 
@@ -43,6 +124,7 @@ const Navbar = () => {
       easing: "ease-out-cubic"
     });
   }, []);
+
   return (
     <nav
       className={`bg-transparent md:bg-white 2xl:py-[13px] py-8 fixed top-0 w-screen left-0 z-50 ${
@@ -90,89 +172,42 @@ const Navbar = () => {
           data-aos="fade-left"
         >
           <ul className="flex flex-col items-center lg:gap-x-[24px] md:gap-x-[14px] md:p-0 mt-[20px] border border-gray-100 rounded-lg md:flex-row md:mt-0 md:border-0 bg-[#f9f1ff] md:bg-transparent font-poppins 3xl:text-[1.3rem] 2xl:text-[1rem] lg:text-[1rem] xl:text-[16px] md:text-[12px] py-6 md:py-0 text-center text-[1rem] font-[500] justify-between flex-1 w-full">
-            <div className="flex md:gap-[24px] md:flex-row flex-col">
-              <li
-                onClick={() => {
-                  setNavBg(false);
-                }}
-                className="border-b-[2px] w-screen md:w-fit md:border-none border-[#fffefe] py-4 md:py-0 sm:pb-4 md:pb-0"
-              >
-                <a
-                  href="https://talentfinder.rework.club/"
-                  className="text-[#8E8E8E] hover:text-[#5C27C0] hover:font-[500] duration-300 border-b-[3px] hover:border-[#5C27C0] border-transparent pb-1 relative"
+            <div className="flex flex-col md:flex-row gap-4 md:gap-5">
+              {navItems.map(({ to, external, label }) => (
+                <NavItem
+                  key={to}
+                  to={to}
+                  external={external}
+                  setNavBg={setNavBg}
                 >
-                  Talent Finder
-                  <span className="w-[30px] text-white bg-[#5C27C0] text-[6px] xl:text-[8px] rounded-[50px] py-[4px] px-[6px] absolute left-[60%] md:left-[53%] xl:left-[55%] 2xl:left-[75%] bottom-[19px] xl:bottom-[22px] 2xl:bottom-[28px] font-gilroy-bold">
-                    NEW
-                  </span>
-                </a>
-              </li>
-
-              {/* all list items has been added with onClick event to close the navbar */}
-              <li
-                onClick={() => {
-                  setNavBg(false);
-                }}
-                className="border-b-[2px] w-screen md:w-fit md:border-none border-[#fffefe] py-4 md:py-0 sm:pb-4 md:pb-0"
-              >
-                <Link
-                  to="/"
-                  className="text-[#8E8E8E] hover:text-[#5C27C0] hover:font-[500] duration-300 border-b-[3px] hover:border-[#5C27C0] border-transparent pb-1 relative"
-                >
-                  For Recruiters
-                </Link>
-              </li>
-              <li
-                onClick={() => {
-                  setNavBg(false);
-                }}
-                className="border-b-[2px] w-screen md:w-fit md:border-none border-[#fffefe] py-4 md:py-0 sm:pb-4 md:pb-0"
-              >
-                <Link
-                  to="/employers"
-                  className="text-[#8E8E8E] hover:font-[500] hover:text-[#5C27C0] duration-300 border-b-[3px] hover:border-[#5C27C0] border-transparent pb-1"
-                >
-                  For Employers
-                </Link>
-              </li>
+                  {label}
+                </NavItem>
+              ))}
             </div>
 
-            <div className="flex md:flex-row flex-col justify-center md:gap-2 lg:gap-2 xl:gap-4 lg:pl-[0px] xl:pl-[20px] md:pl-[10px] pl-0 mt-1 md:mt-0">
-              <button
-                onClick={() => setNavBg(false)}
-                className="border-b-[2px] w-screen md:w-fit md:border-none border-[#fffefe] pb-4 py-4 md:py-0 md:pb-0"
-              >
-                <Link
-                  onClick={() => setOpenLoginModal(true)}
-                  to="/"
-                  className="text-[#5C27C0] md:border-[2.347px] border-[#5C27C0] rounded-[10px] xl:text-[1rem] 2xl:text-[1rem] lg:text-[14.486px] text-[12.486px] md:px-[16px] md:py-[8.267px] 3xl:text-[1.3rem] xl:px-[20px] xl:py-[10.267px] 2xl:px-[22.667px] 2xl:py-[9.689px] md:hover:bg-[#5C27C0] md:hover:text-white duration-300 font-semibold"
+            <div className="flex flex-col md:flex-row justify-center gap-2 lg:gap-4 xl:gap-6 mt-1 md:mt-0">
+              {buttonLinks.map(({ onClick, to, primary, label }) => (
+                <ButtonLink
+                  key={to}
+                  onClick={onClick}
+                  to={to}
+                  primary={primary}
+                  setNavBg={setNavBg}
                 >
-                  Sign in
-                </Link>
-                <Login
-                  openLoginModal={openLoginModal}
-                  setOpenLoginModal={setOpenLoginModal}
-                />
-              </button>
-              <button
-                onClick={() => setNavBg(false)}
-                className="mt-[20px] md:mt-0"
-              >
-                <Link
-                  onClick={() => setOpenRegisterModal(true)}
-                  to="/"
-                  className="md:text-white text-black md:border-[2.347px] border-[#5C27C0] rounded-[10px] 2xl:text-[1rem] xl:text-[16.486px] lg:text-[14.486px] text-[12.486px] md:px-[16px] md:py-[8.267px] 3xl:text-[1.3rem] xl:px-[20px] xl:py-[10.267px] 2xl:px-[22.667px] 2xl:py-[9.689px] md:bg-[#5C27C0] bg-transparent hover:bg-transparent hover:text-[#5C27C0] duration-300 font-semibold mt-1"
-                >
-                  Get Started
-                </Link>
-                <Register
-                  openRegisterModal={openRegisterModal}
-                  setOpenRegisterModal={setOpenRegisterModal}
-                  activeState="recruiters"
-                  checked={checked}
-                  setChecked={setChecked}
-                />
-              </button>
+                  {label}
+                </ButtonLink>
+              ))}
+              <Login
+                openLoginModal={openLoginModal}
+                setOpenLoginModal={setOpenLoginModal}
+              />
+              <Register
+                openRegisterModal={openRegisterModal}
+                setOpenRegisterModal={setOpenRegisterModal}
+                activeState="recruiters"
+                checked={checked}
+                setChecked={setChecked}
+              />
             </div>
           </ul>
         </div>

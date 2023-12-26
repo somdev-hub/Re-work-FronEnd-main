@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Amazon from "../../assets/AmazonBgColor.png";
 import AmazonBgWhite from "../../assets/amazon.png";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Pagination } from "swiper";
+import { Autoplay, Pagination } from 'swiper/modules';
 import "swiper/css/pagination";
 import "swiper/css";
 const Testimonials = () => {

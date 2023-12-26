@@ -5,12 +5,17 @@ import tick from "./assets/tick.svg";
 import hero_review_one from "./assets/hero-review-one.png";
 import hero_review_two from "./assets/hero-review-two.png";
 import hero_review_three from "./assets/hero-review-three.png";
+import Trusted from "./Trusted";
+import Testimonials from "./Testimonials";
+import CommonQuestions from "./CommonQuestions";
+import Steps from "./Steps";
+import AchievingHeights from "./AchievingHeights";
 
 const Hero = () => {
   return (
     <div>
       <Navbar />
-      <div className="3xl:h-screen 3xl:items-center 3xl:mt-0 mt-[6rem] sm:mt-[9rem] w-screen flex flex-col items-center justify-center sm:px-0 px-[1rem]">
+      <div className="3xl:h-screen 3xl:items-center 3xl:mt-0 mt-[6rem] sm:mt-[9rem] flex flex-col items-center justify-center sm:px-0 px-[1rem]">
         <div className="text-center">
           <h1 className="lg:text-[4.5rem] sm:text-[3.5rem] text-[2.3rem] 3xl:text-[6.5rem] font-[700] sm:leading-[5.125rem] 3xl:leading-[9rem] font-poppins heading py-2">
             Earn by Referring Talent
@@ -75,6 +80,12 @@ const Hero = () => {
           </div>
         </div>
       </div>
+
+      <Trusted />
+      <Steps />
+      <AchievingHeights />
+      <Testimonials />
+      <CommonQuestions />
     </div>
   );
 };

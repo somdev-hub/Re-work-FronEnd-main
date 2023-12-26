@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import profile_icon from "../../assets/profile-icon.svg";
 import TeamCard from "./TeamCard";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper";
+import { Navigation } from 'swiper/modules';
 import "swiper/css/navigation";
 import "swiper/css";
 

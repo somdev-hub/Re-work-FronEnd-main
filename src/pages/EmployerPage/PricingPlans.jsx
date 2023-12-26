@@ -3,7 +3,7 @@ import tick_green from "../../assets/tick-green.svg";
 import cross_red from "../../assets/cross-red.svg";
 import { HiOutlineArrowSmallRight } from "react-icons/hi2";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Pagination } from "swiper";
+import { Autoplay, Pagination, } from 'swiper/modules';
 import "swiper/css/pagination";
 import "swiper/css";
 

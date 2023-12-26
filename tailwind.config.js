@@ -49,7 +49,12 @@ module.exports = withMT({
         "quicksand-medium": ["Quicksand-Medium", "sans-serif"],
         quicksand: ["Quicksand", "sans-serif"],
         poppins: ["Poppins", "sans-serif"],
-        actor: ["Actor", "sans-serif"]
+        actor: ["Actor", "sans-serif"],
+        "garnett-regular": ["GarnettRegular", "sans-serif"],
+        "garnett-bold": ["GarnettBold", "sans-serif"],
+        "garnett-medium": ["GarnettMedium", "sans-serif"],
+        "garnett-semi-bold": ["GarnettSemiBold", "sans-serif"],
+        "space-grotesk": ['Space Grotesk', "sans-serif"],
       }
     }
   },
