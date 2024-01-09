@@ -55,8 +55,12 @@
   src: url(./assets/Garnett-Regular.ttf);
 }
 @font-face {
-  font-family: "GarnettMBold";
+  font-family: "GarnettBold";
   src: url(./assets/Garnett-Bold.ttf);
+}
+@font-face {
+  font-family: "GarnettMediumItalic";
+  src: url(./assets/Garnett-MediumItalic.ttf);
 }
 
 .text-color {

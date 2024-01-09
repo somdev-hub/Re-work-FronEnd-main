@@ -74,7 +74,7 @@ const Testimonials = () => {
           ref={scrollDiv}
         >
           <div className="flex  gap-7 flex-col">
-            {Array.from({ length: 20 }).map((_, index) => {
+            {Array.from({ length: 100 }).map((_, index) => {
               const item = testimonials[index % testimonials.length];
               return (
                 index % 3 === 0 && (
@@ -94,7 +94,7 @@ const Testimonials = () => {
                         )}
                     </p>
                     <div>
-                      <h3 className="text-[#5C27C0] font-gilroy-medium text-[1.5rem] leading-[2rem]">
+                      <h3 className="text-[#5C27C0] font-garnett-regular text-[1.5rem] leading-[2rem]">
                         {item?.name}
                       </h3>
                       <p className="text-[#6A6A6A] text-[1rem] font-[500] font-poppins">
@@ -107,7 +107,7 @@ const Testimonials = () => {
             })}
           </div>
           <div className="flex   gap-7 flex-col">
-            {Array.from({ length: 20 }).map((_, index) => {
+            {Array.from({ length: 100 }).map((_, index) => {
               const item = testimonials[index % testimonials.length];
               return (
                 index % 2 === 0 && (
@@ -127,7 +127,7 @@ const Testimonials = () => {
                         )}
                     </p>
                     <div>
-                      <h3 className="text-[#5C27C0] font-gilroy-medium text-[1.5rem] leading-[2rem]">
+                      <h3 className="text-[#5C27C0] font-garnett-regular text-[1.5rem] leading-[2rem]">
                         {item?.name}
                       </h3>
                       <p className="text-[#6A6A6A] text-[1rem] font-[500] font-poppins">
@@ -140,7 +140,7 @@ const Testimonials = () => {
             })}
           </div>
           <div className="flex gap-7 flex-col">
-            {Array.from({ length: 20 }).map((_, index) => {
+            {Array.from({ length: 100 }).map((_, index) => {
               const item = testimonials[index % testimonials.length];
               return (
                 (index + 1) % 3 === 0 && (
@@ -157,7 +157,7 @@ const Testimonials = () => {
                         )}
                     </p>
                     <div>
-                      <h3 className="text-[#5C27C0] font-gilroy-medium text-[1.5rem] leading-[2rem]">
+                      <h3 className="text-[#5C27C0] font-garnett-regular text-[1.5rem] leading-[2rem]">
                         {item?.name}
                       </h3>
                       <p className="text-[#6A6A6A] text-[1rem] font-[500] font-poppins">

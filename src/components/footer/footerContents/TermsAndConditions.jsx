@@ -38,6 +38,7 @@ const TermsAndConditions = () => {
 
   useEffect(() => {
     getTermsandConditions();
+    // console.log(termsAndConditions);
   }, []);
 
   return (

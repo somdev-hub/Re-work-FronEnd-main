@@ -5,8 +5,22 @@
     -webkit-text-fill-color: transparent;
 }
 
+.heading-h1 {
+    background: var(--Linear, linear-gradient(231deg, #5c27c0 12.56%, #300580 12.57%, #c4a5ff 107.67%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .heading-h2 {
-    background: var(linear-gradient(95deg, #a77afc -12.03%, #5c27c0 61.09%, #5800ff 119.17%));
+    background: var(--button-grad-2, linear-gradient(95deg, #a77afc -12.03%, #5c27c0 61.09%, #5800ff 119.17%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.heading-h2-right {
+    background: linear-gradient(87deg, #5c27c0 0.94%, #300580 0.95%, #a47eeb 76.65%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -54,4 +68,13 @@
 
 .scroll-smooth {
     scroll-behavior: smooth;
+}
+
+strong {
+    /* color: #5c27c0; */
+    font-family: "GarnettMedium";
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 123%;
+    color: #272727;
 }

@@ -61,8 +61,8 @@ const CommonQuestions = () => {
   const [isOpen, setIsOpen] = React.useState([]);
   return (
     <div className="px-[1.5rem] xl:px-[7.5rem] py-[3rem] lg:py-[6.62rem] bg-[#5C27C0] mt-[7rem] md:mt-[10rem]">
-      <h2 className="text-[#F3F3F3] font-poppins text-[2.6rem] font-[700] leading-[3rem]">
-        Common <span className="font-[400]">Questions</span>
+      <h2 className="text-[#F3F3F3] font-garnett-semi-bold text-[2.6rem] font-[700] leading-[3rem]">
+        Common <span className="font-[400] font-garnett-regular">Questions</span>
       </h2>
       <p className="text-[#E5D7FF] text-[1.125rem] font-[400] leading-[1.3rem] mt-3">
         We have Compiled the most commonly asked question about our Platform for

@@ -1,7 +1,7 @@
 import "./App.css";
 import "react-toastify/dist/ReactToastify.css";
 import { Outlet, createBrowserRouter, RouterProvider } from "react-router-dom";
-import Navbar from "./components/navbar/Navbar";
+// import Navbar from "./components/navbar/Navbar";
 import Home from "./pages/home/Home";
 import React, { useEffect, useState } from "react";
 import Footer from "./components/footer/Footer";
@@ -85,7 +85,16 @@ import SignUp from "./pages/SignUp/SignUp";
 import Login from "./pages/Login2/Login";
 import OurTeam from "./pages/OurTeam/OurTeam";
 import InvestInUs from "./pages/InvestInUs/InvestInUs";
-import Hero from "./pages/NewHero/Hero";
+// import Hero from "./pages/NewHero/Hero";
+import ForRecruiter from "./pages/NewHero/ForRecruiter/ForRecruiter";
+import Navbar from "./pages/NewHero/components/Navbar";
+import NewTermsAndConditions from "./pages/NewHero/TermsAndConditions/TermsAndConditions";
+import NewPrivacyPolicy from "./pages/NewHero/PrivacyPolicy/PrivacyPolicy";
+import NewDataProtection from "./pages/NewHero/DataProtection/DataProtection";
+import NewAboutUs from "./pages/NewHero/AboutUs/AboutUs";
+import NewSignup from "./pages/NewHero/Signup/Signup";
+import NewLogin from "./pages/NewHero/Login/Login";
+import NewForgetPassword from "./pages/NewHero/ForgetPassword/ForgetPassword";
 
 ReactGA.initialize("UA-258280858-1");
 
@@ -94,7 +103,8 @@ const Layout = () => {
 
   return (
     <>
-      <Navbar open={open} setOpen={setOpen} />
+      {/* <Navbar open={open} setOpen={setOpen} /> */}
+      <Navbar />
       <div
         className={` ${
           open && "bg-slate-200 opacity-50"
@@ -102,7 +112,7 @@ const Layout = () => {
       >
         <Outlet />
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };
@@ -317,6 +327,27 @@ function App() {
           path: "/",
           element: <Home />
         },
+        {
+          path: "/newhero",
+          element: <ForRecruiter />
+        },
+        {
+          path: "/newtermsandconditions",
+          element: <NewTermsAndConditions />
+        },
+        {
+          path: "/newprivacypolicy",
+          element: <NewPrivacyPolicy />
+        },
+        {
+          path: "/newdataprotection",
+          element: <NewDataProtection />
+        },
+        {
+          path: "/newaboutus",
+          element: <NewAboutUs />
+        },
+        
         // {
         //   path: "/employers",
         //   element: <HomeCompany />
@@ -389,17 +420,18 @@ function App() {
     //   path: "/login",
     //   element: <Login />,
     // },
-    {
-      path: "/newHero",
-      element: <Hero />
-    },
+
     {
       path: "/signup",
-      element: <SignUp />
+      element: <NewSignup />
+    },
+    {
+      path: "/forgetpassword",
+      element: <NewForgetPassword />
     },
     {
       path: "/login",
-      element: <Login />
+      element: <NewLogin />
     },
     {
       path: "/forgotPass",

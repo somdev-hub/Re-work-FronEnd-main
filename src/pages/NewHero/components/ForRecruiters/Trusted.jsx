@@ -1,12 +1,12 @@
 import React from "react";
-import amazon from "./assets/amazon.png";
-import google from "./assets/google.png";
-import nokia from "./assets/nokia.png";
-import spotify from "./assets/spotify.png";
-import tcs from "./assets/tcs.png";
-import microsoft from "./assets/microsoft.png";
-import trust_one from "./assets/trust-one.svg";
-import trust_two from "./assets/trust-two.svg";
+import amazon from "../../assets/amazon.png";
+import google from "../../assets/google.png";
+import nokia from "../../assets/nokia.png";
+import spotify from "../../assets/spotify.png";
+import tcs from "../../assets/tcs.png";
+import microsoft from "../../assets/microsoft.png";
+import trust_one from "../../assets/trust-one.svg";
+import trust_two from "../../assets/trust-two.svg";
 // import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -72,14 +72,14 @@ const Trusted = () => {
           <div className="px-8 md:border-solid md:border-r-2 border-[#CECECE]">
             <img src={trust_one} alt="" />
             <div className="my-7">
-              <p className="text-[#EFE5FF] font-[700] text-[1.5rem] font-poppins text-left">
+              <p className="text-[#EFE5FF] font-[700] text-[1.5rem] font-garnett-semi-bold text-left">
                 Empowering Through
               </p>
-              <p className="text-[#EFE5FF] font-[400] text-[1.5rem] font-poppins text-left">
+              <p className="text-[#EFE5FF] font-[400] text-[1.5rem] font-garnett-regular text-left">
                 Artificial Intelligence.
               </p>
             </div>
-            <p className="text-left font-[400] text-white">
+            <p className="text-left font-[400] text-white font-poppins">
               Zero overhead in the hiring process - promise! Source top quality
               candidates for some of the best companies and maximize your
               earning.
@@ -88,14 +88,14 @@ const Trusted = () => {
           <div className="px-8 border-solid border-r-2 border-[#CECECE]">
             <img src={trust_two} alt="" />
             <div className="my-7">
-              <p className="text-[#EFE5FF] font-[700] text-[1.5rem] font-poppins text-left">
+              <p className="text-[#EFE5FF] font-[700] text-[1.5rem] font-garnett-semi-bold text-left">
                 Prioritizing the progress of
               </p>
-              <p className="text-[#EFE5FF] font-[400] text-[1.5rem] font-poppins text-left">
+              <p className="text-[#EFE5FF] font-[400] text-[1.5rem] font-garnett-regular text-left">
                 Community.
               </p>
             </div>
-            <p className="text-left font-[400] text-white">
+            <p className="text-left font-[400] text-white font-poppins">
               Join us in prioritizing the growth and success of our vibrant
               community. Together, we advance, innovate, and redefine standards,
               shaping a future
@@ -104,14 +104,14 @@ const Trusted = () => {
           <div className="px-8 ">
             <img src={trust_one} alt="" />
             <div className="my-7">
-              <p className="text-[#EFE5FF] font-[700] text-[1.5rem] font-poppins text-left">
+              <p className="text-[#EFE5FF] font-[700] text-[1.5rem] font-garnett-semi-bold text-left">
                 Empowering Through
               </p>
-              <p className="text-[#EFE5FF] font-[400] text-[1.5rem] font-poppins text-left">
+              <p className="text-[#EFE5FF] font-[400] text-[1.5rem] font-garnett-regular text-left">
                 Artificial Intelligence.
               </p>
             </div>
-            <p className="text-left font-[400] text-white">
+            <p className="text-left font-[400] text-white font-poppins">
               Zero overhead in the hiring process - promise! Source top quality
               candidates for some of the best companies and maximize your
               earning.

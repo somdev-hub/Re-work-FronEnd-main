@@ -54,6 +54,7 @@ module.exports = withMT({
         "garnett-bold": ["GarnettBold", "sans-serif"],
         "garnett-medium": ["GarnettMedium", "sans-serif"],
         "garnett-semi-bold": ["GarnettSemiBold", "sans-serif"],
+        "garnett-medium-italic": ["GarnettMediumItalic", "sans-serif"],
         "space-grotesk": ['Space Grotesk', "sans-serif"],
       }
     }
