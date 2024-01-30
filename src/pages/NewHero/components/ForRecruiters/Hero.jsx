@@ -31,7 +31,7 @@ const Hero = () => {
             ipsum .
           </p>
         </div>
-        <button className="flex px-[1.5rem] py-[0.5rem] sm:px-[3rem] 2xl:px-[3.5rem] sm:py-[1.1rem] 3xl:mt-[2.5rem] heading-btn text-[#FFFBFB] font-poppins sm:text-[1.2rem] 2xl:text-[1.5rem]  text-[1rem] font-[500] mt-6">
+        <button className="flex px-[1.5rem] py-[0.5rem] sm:px-[3rem] 2xl:px-[3.5rem] sm:py-[1.1rem] 3xl:mt-[2.5rem] heading-btn rounded-[0.5rem] md:rounded-[1.25rem] text-[#FFFBFB] font-poppins sm:text-[1.2rem] 2xl:text-[1.5rem]  text-[1rem] font-[500] mt-6">
           Get Started
         </button>
         <div className="mt-6 3xl:mt-10 flex gap-5 sm:gap-10 flex-wrap items-center justify-center">

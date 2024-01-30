@@ -86,15 +86,16 @@ import Login from "./pages/Login2/Login";
 import OurTeam from "./pages/OurTeam/OurTeam";
 import InvestInUs from "./pages/InvestInUs/InvestInUs";
 // import Hero from "./pages/NewHero/Hero";
-import ForRecruiter from "./pages/NewHero/ForRecruiter/ForRecruiter";
+import ForRecruiter from "./pages/NewHero/pages/ForRecruiter/ForRecruiter";
 import Navbar from "./pages/NewHero/components/Navbar";
-import NewTermsAndConditions from "./pages/NewHero/TermsAndConditions/TermsAndConditions";
-import NewPrivacyPolicy from "./pages/NewHero/PrivacyPolicy/PrivacyPolicy";
-import NewDataProtection from "./pages/NewHero/DataProtection/DataProtection";
-import NewAboutUs from "./pages/NewHero/AboutUs/AboutUs";
-import NewSignup from "./pages/NewHero/Signup/Signup";
-import NewLogin from "./pages/NewHero/Login/Login";
-import NewForgetPassword from "./pages/NewHero/ForgetPassword/ForgetPassword";
+import NewTermsAndConditions from "./pages/NewHero/pages/TermsAndConditions/TermsAndConditions";
+import NewPrivacyPolicy from "./pages/NewHero/pages/PrivacyPolicy/PrivacyPolicy";
+import NewDataProtection from "./pages/NewHero/pages/DataProtection/DataProtection";
+import NewAboutUs from "./pages/NewHero/pages/AboutUs/AboutUs";
+import NewSignup from "./pages/NewHero/pages/Signup/Signup";
+import NewLogin from "./pages/NewHero/pages/Login/Login";
+import NewForgetPassword from "./pages/NewHero/pages/ForgetPassword/ForgetPassword";
+import ForEmployers from "./pages/NewHero/pages/ForEmployers/ForEmployers";
 
 ReactGA.initialize("UA-258280858-1");
 
@@ -347,7 +348,7 @@ function App() {
           path: "/newaboutus",
           element: <NewAboutUs />
         },
-        
+
         // {
         //   path: "/employers",
         //   element: <HomeCompany />
@@ -355,6 +356,10 @@ function App() {
         {
           path: "/employers",
           element: <EmployerPage />
+        },
+        {
+          path: "/new-employers",
+          element: <ForEmployers />
         },
         {
           path: "/ourteam",

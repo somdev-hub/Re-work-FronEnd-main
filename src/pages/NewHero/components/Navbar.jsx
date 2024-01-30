@@ -79,7 +79,7 @@ const Navbar = () => {
       label: "Talent Finder"
     },
     { to: "/newhero", label: "For Recruiters" },
-    { to: "/employers", label: "For Employers" },
+    { to: "/new-employers", label: "For Employers" },
     { to: "/newaboutus", label: "About Us" },
     { to: "/company", label: "Company" }
   ];
@@ -132,7 +132,7 @@ const Navbar = () => {
           : "w-full top-0 fixed z-50 ease-in-out lg:shadow-md"
       }`}
     >
-      <div className="flex items-center gap-10 px-0 lg:px-[5%] xl:px-[7%]">
+      <div className="flex items-center gap-10 px-0 lg:px-[1.5rem] xl:px-[7.5rem]">
         <div className="shadow-md md:shadow-none flex justify-between items-center px-[6%] lg:px-0 w-full py-5 2xl:py-[20px] lg:py-0 bg-white lg:bg-transparent fixed lg:relative lg:w-fit top-0">
           <Link to="/">
             <img
