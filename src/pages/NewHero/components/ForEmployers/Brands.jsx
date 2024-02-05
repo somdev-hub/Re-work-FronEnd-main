@@ -23,9 +23,9 @@ const Brands = () => {
         <Swiper
           className="mySwiper"
           modules={[Autoplay]}
-          // autoplay={{
-          //   delay: 1000
-          // }}
+          autoplay={{
+            delay: 1000
+          }}
           loopedSlides={true}
           loop={true}
           centeredSlides={true}
